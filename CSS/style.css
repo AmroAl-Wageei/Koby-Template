@@ -11,8 +11,8 @@
 }
 
 :root {
-  --main-color: rgb(255, 255, 0);
-  --transparent-color: rgba(255, 255, 0, 0.257);
+  --main-color: rgba(255, 255, 0, 0.575);
+  --transparent-color: rgba(255, 255, 0, 0.271);
   --body-color: #eee;
   --backgroud-color: #f6f6f6;
 
@@ -503,6 +503,13 @@ header nav .form i {
   background-color: #ffffff;
   opacity: 0.7;
 }
+.portfolio .imgs-container .box:hover .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.portfolio .imgs-container .box:hover .caption p {
+  color: var(--main-color);
+}
 .portfolio .imgs-container .box img {
   max-width: 100%;
   max-width: fit-content;
@@ -526,4 +533,280 @@ header nav .form i {
     width: 500px;
   }
 }
+.portfolio .more {
+  background-color: var(--main-color);
+  color: rgb(255, 255, 255);
+  display: block;
+  width: fit-content;
+  text-align: center;
+  margin: 30px auto;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 /* End Portfolio */
+
+/* Start Video */
+.video {
+  position: relative;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 231, 244, 0.2);
+}
+.video video {
+  width: 100%;
+  /* aspect-ratio: ; */
+}
+.video .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  background-color: var(--transparent-color);
+  padding: 50px;
+}
+.video .text h2 {
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.video .text p {
+  margin-bottom: 30px;
+}
+.video .text button {
+  background-color: #0d0e0f;
+  color: #eee;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* End Video */
+
+/* Start About */
+
+.about {
+  padding-top: var(--section-padding);
+  text-align: center;
+  overflow: hidden;
+}
+.about img {
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+  max-width: 100%;
+}
+
+/* End About */
+
+/* Start Stat */
+.stat {
+  margin-top: 10px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+  background-image: url("../Images/stat.jpg");
+  background-size: cover;
+  position: relative;
+}
+.stat::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 231, 244, 0.543);
+}
+.stat .container {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000000;
+}
+.stat .container .box {
+  color: #000000;
+  padding: 50px;
+  background-color: #00000023;
+}
+.stat .container .box i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 auto 30px;
+}
+.stat .container .box .number {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.stat .container .box p {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .stat .container {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .stat .container {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 991px) {
+  .stat .container {
+    flex-basis: 25%;
+  }
+}
+/* End Stat */
+
+/* Start Skills */
+.our-skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.our-skills .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.our-skills .container > div > h3 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.our-skills .container > div > p {
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our-skills .content {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.our-skills .content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 50px;
+}
+.our-skills .testimonials .content .text {
+  line-height: 2;
+  border-bottom: 1px solid #ccc;
+}
+.our-skills .testimonials .content .text p {
+  color: #777;
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.our-skills .testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.our-skills .testimonials .bullets li {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.our-skills .testimonials .bullets li.active {
+  background-color: rgb(101, 101, 58);
+  border-color: rgb(101, 101, 58);
+}
+@media (max-width: 767px) {
+  .our-skills .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .our-skills .content img {
+    margin: 0 auto 20px;
+  }
+  .our-skills .testimonials .content .text p {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .our-skills .container > div {
+    flex-basis: 45%;
+  }
+}
+.our-skills .skills .prog-holder {
+  margin-bottom: 40px;
+}
+.our-skills .skills .prog-holder h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.our-skills .skills .prog-holder .prog {
+  background-color: #ededed;
+  height: 30px;
+}
+.our-skills .skills .prog-holder .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.our-skills .skills .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: #0d0e0f;
+  color: #ededed;
+  top: -40px;
+  right: -15px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.our-skills .skills .prog-holder .prog span::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #0d0e0f transparent transparent transparent;
+  right: -8px;
+  top: -15px;
+}
+/* End Skills */
