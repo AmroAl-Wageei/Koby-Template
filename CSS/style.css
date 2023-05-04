@@ -810,3 +810,143 @@ header nav .form i {
   top: -15px;
 }
 /* End Skills */
+
+/* Start Qoute */
+.qoute {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url("../Images/230131131712-01-kobe-bryant-mvp-jersey-auction.jpg");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.qoute::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 231, 244, 0.2);
+}
+.qoute .container {
+  position: relative;
+}
+.qoute q {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+.qoute q::before {
+  position: relative;
+  font-family: "Font Awesome 6 Free";
+  content: "\f10d";
+  color: var(--main-color);
+  font-weight: 900;
+  margin-right: 20px;
+}
+.qoute q::after {
+  position: relative;
+  font-family: "Font Awesome 6 Free";
+  content: "\f10e";
+  color: var(--main-color);
+  font-weight: 900;
+  margin-left: 20px;
+}
+/* End Qoute */
+
+/* Start Pricing  */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+.pricing .plans .plan .head {
+  padding: 40px 20px;
+  border-top: 5px solid rgb(91, 92, 44);
+  border-bottom: 5px solid rgb(91, 92, 44);
+}
+.pricing .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+  font-size: 50px;
+  font-weight: bold;
+  /* position: relative; */
+}
+.pricing .plans .plan .head span::before {
+  content: "$";
+  font-size: 25px;
+  font-weight: normal;
+  position: relative;
+  top: -40px;
+  margin-right: 15px;
+}
+.pricing .plans .plan .head span::after {
+  content: "/Mo";
+  font-size: 25px;
+  font-weight: normal;
+  position: relative;
+  right: -15px;
+}
+
+.pricing .plans .plan ul {
+  border-bottom: 4px solid rgb(91, 92, 44);
+}
+.pricing .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+}
+/* .pricing .plans .plan ul li::not(:last-child) {
+  position: relative;
+} */
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  position: absolute;
+  background-color: rgb(91, 92, 44);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: 0;
+}
+.pricing .plans .plan .footer a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  border: 1px solid rgb(91, 92, 44);
+  width: fit-content;
+  margin: 30px auto;
+  color: black;
+}
+
+.contact-text {
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
+}
+.contact-link {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: rgb(91, 92, 44);
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+}
+/* End Pricing  */
